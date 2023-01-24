@@ -1,13 +1,11 @@
-import { AccountCircle } from "@mui/icons-material";
 import {
   Typography,
   Box,
   TextField,
   InputAdornment,
-  IconButton,
   Button,
 } from "@mui/material";
-import { fontWeight, width } from "@mui/system";
+
 import React from "react";
 import HeroImg from "../Assets/Images/heroImage.jpg";
 
@@ -27,7 +25,7 @@ export default function Hero() {
       fontWeight: "500",
       color: "#2D9CDB",
       "@media only screen and (max-width : 400px)": {
-        fontSize : "12px"
+        fontSize: "12px",
       },
     },
     subTitle: {
@@ -37,9 +35,9 @@ export default function Hero() {
       width: "543px",
       marginTop: "16px",
       "@media only screen and (max-width : 400px)": {
-        fontSize : "24px",
+        fontSize: "24px",
         width: "272px",
-        marginTop: "0px"
+        marginTop: "0px",
       },
     },
     banner: {
@@ -60,9 +58,8 @@ export default function Hero() {
       marginLeft: "207px",
       "@media only screen and (max-width : 400px)": {
         marginTop: "22px",
-        marginLeft : "26.5px"
+        marginLeft: "26.5px",
       },
-      
     },
     story: {
       fontSize: "48px",
@@ -70,8 +67,8 @@ export default function Hero() {
       fontWeight: "500",
       width: "366px",
       "@media only screen and (max-width : 400px)": {
-        fontSize : "24px",
-        width : "277px"
+        fontSize: "24px",
+        width: "277px",
       },
     },
     help: {
@@ -81,9 +78,9 @@ export default function Hero() {
       fontWeight: "400",
       width: "366px",
       "@media only screen and (max-width : 400px)": {
-        marginTop : "33px",
-        fontSize : "12px",
-        width : "275px"
+        marginTop: "33px",
+        fontSize: "12px",
+        width: "275px",
       },
     },
     textfieldLabel: {
@@ -93,8 +90,8 @@ export default function Hero() {
       fontWeight: "500",
       color: "#828282",
       "@media only screen and (max-width : 400px)": {
-        marginTop : "31px",
-        fontSize : "10px",
+        marginTop: "31px",
+        fontSize: "10px",
       },
     },
     textField: {
@@ -102,8 +99,8 @@ export default function Hero() {
       width: "350px",
       height: "57px",
       "@media only screen and (max-width : 400px)": {
-        width : "291px",
-        height : "47px"
+        width: "291px",
+        height: "47px",
       },
     },
     inputBtn: {
@@ -117,9 +114,9 @@ export default function Hero() {
       color: "#FFFFFF",
       backgroundColor: "#2D9CDB",
       "@media only screen and (max-width : 400px)": {
-        width : "71px",
-        height : "39px",
-        fontSize : "14px"
+        width: "71px",
+        height: "39px",
+        fontSize: "14px",
       },
     },
   };
@@ -157,7 +154,7 @@ export default function Hero() {
               </InputAdornment>
             ),
           }}
-          inputProps={{ style: { padding: "16.5px 12px"} }}
+          inputProps={{ style: { padding: "16.5px 12px" } }}
         ></TextField>
       </Box>
     </Box>
