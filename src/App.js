@@ -8,6 +8,9 @@ function App() {
   const style = {
     mainCon: {
       margin: "96px 70px",
+      "@media only screen and (max-width : 400px)":{
+        margin : "48px 13.5px"
+      }
     },
   };
   return (

@@ -11,7 +11,6 @@ import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Services", "Our Works", "Clients", "Contact"];
 
 export default function DrawerAppBar(props) {
   const { window } = props;
@@ -41,9 +40,9 @@ export default function DrawerAppBar(props) {
       textTransform: "none",
       marginLeft: "20px",
       textDecoration: "none",
-      "&:hover" : {
-        cursor : "pointer"
-      }
+      "&:hover": {
+        cursor: "pointer",
+      },
     },
   };
 
@@ -56,46 +55,54 @@ export default function DrawerAppBar(props) {
         elevation={0}
       >
         <Toolbar>
-          <IconButton
-            color="black"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
-          >
-            <MenuIcon />
-          </IconButton>
           <Typography
             variant="h6"
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: "none", sm: "block" },
+              display: { sm: "flex" },
               color: "black",
               ml: "54px",
               mt: "21px",
-              mb : "21px",
+              mb: "21px",
               fontSize: "36px",
               fontFamily: "Heebo",
               fontWeight: "800",
+              "@media only screen and (max-width : 400px)": {
+                ml: "10px",
+                mt: "6.5px",
+                mb: "6.5px",
+                fontSize: "24px",
+              },
             }}
           >
             Edie
           </Typography>
+          <IconButton
+            color="black"
+            aria-label="open drawer"
+            edge="end"
+            onClick={handleDrawerToggle}
+            sx={{ mr: 2, display: { sm: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
           <Box
             sx={{
               display: { xs: "none", sm: "flex" },
               mr: "54px",
               mt: "21px",
-              mb : "21px",
+              mb: "21px",
             }}
           >
             <Box>
-              <Link href="#" sx = {style.linkmenu}>Home</Link>
-              <Link  sx = {style.linkmenu}>Services</Link>
-              <Link  sx = {style.linkmenu}>Our works</Link>
-              <Link  sx = {style.linkmenu}>Clients</Link>
-              <Link  sx = {style.linkmenu}>Contact</Link>
+              <Link href="#" sx={style.linkmenu}>
+                Home
+              </Link>
+              <Link sx={style.linkmenu}>Services</Link>
+              <Link sx={style.linkmenu}>Our works</Link>
+              <Link sx={style.linkmenu}>Clients</Link>
+              <Link sx={style.linkmenu}>Contact</Link>
             </Box>
           </Box>
         </Toolbar>
