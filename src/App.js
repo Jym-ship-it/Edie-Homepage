@@ -5,6 +5,7 @@ import { Box } from "@mui/system";
 import Services from "./Components/Services";
 import Works from "./Components/Works";
 import Team from "./Components/Team";
+import Phrase from "./Components/Phrase";
 
 function App() {
   const style = {
@@ -39,6 +40,7 @@ function App() {
       <Services></Services>
       <Works></Works>
       <Team></Team>
+      <Phrase></Phrase>
     </Box>
   );
 }
