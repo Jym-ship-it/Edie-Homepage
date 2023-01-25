@@ -92,8 +92,8 @@ export default function Works() {
     },
   };
   return (
-    <Box sx={style.mainCon}>
-      <Box>
+    <Box sx={style.mainCon} >
+      <Box  id = 'test'>
         <Typography sx={style.title}>
           Good design means good business
         </Typography>

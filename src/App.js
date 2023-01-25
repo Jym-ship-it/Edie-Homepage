@@ -15,6 +15,7 @@ function App() {
         margin: "48px 13.5px",
       },
     },
+    
   };
   return (
     <Box sx={style.mainCon}>

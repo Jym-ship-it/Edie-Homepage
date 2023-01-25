@@ -9,6 +9,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
+import Works from "./Works";
 
 const drawerWidth = 240;
 
@@ -99,8 +100,8 @@ export default function DrawerAppBar(props) {
               <Link href="#" sx={style.linkmenu}>
                 Home
               </Link>
-              <Link sx={style.linkmenu}>Services</Link>
-              <Link sx={style.linkmenu}>Our works</Link>
+              <Link sx={style.linkmenu} >Services</Link>
+              <Link sx={style.linkmenu} href = "#test">Our works</Link>
               <Link sx={style.linkmenu}>Clients</Link>
               <Link sx={style.linkmenu}>Contact</Link>
             </Box>

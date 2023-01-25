@@ -121,7 +121,7 @@ export default function Hero() {
     },
   };
   return (
-    <Box>
+    <Box> 
       <Box sx={style.titleCon}>
         <Typography sx={style.title}>Unhappy with your website ?</Typography>
         <Typography sx={style.subTitle}>
