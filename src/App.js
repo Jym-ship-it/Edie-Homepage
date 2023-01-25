@@ -3,6 +3,7 @@ import NavBar from "./Components/navBar";
 import Hero from "./Components/Hero";
 import { Box } from "@mui/system";
 import Services from "./Components/Services";
+import Works from "./Components/Works";
 
 function App() {
   const style = {
@@ -35,6 +36,7 @@ function App() {
       <NavBar></NavBar>
       <Hero></Hero>
       <Services></Services>
+      <Works></Works>
     </Box>
   );
 }

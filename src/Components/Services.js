@@ -8,7 +8,8 @@ import StorageIcon from "@mui/icons-material/Storage";
 export default function Services() {
   const style = {
     mainCon: {
-      margin: "200px 95px",
+      margin: "0px 95px",
+      marginTop : "200px",
       "@media only screen and (max-width : 400px)" : {
         margin : "102px 5px"
       }
