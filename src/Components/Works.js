@@ -1,4 +1,4 @@
-import { Link, Typography, Button } from "@mui/material";
+import { Link, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import SmartHomeImg from "../Assets/Images/smarthome.jpg";
@@ -87,7 +87,7 @@ export default function Works() {
       justifyContent: "right",
       "@media only screen and (max-width : 400px)": {
         justifyContent: "left",
-        marginTop : "35.64px"
+        marginTop: "35.64px",
       },
     },
   };
@@ -121,7 +121,7 @@ export default function Works() {
         </Box>
         <Box sx={style.buttonCon}>
           <Link sx={style.links} href="#">
-            see more <ArrowRightAltIcon  />
+            see more <ArrowRightAltIcon />
           </Link>
         </Box>
       </Box>
