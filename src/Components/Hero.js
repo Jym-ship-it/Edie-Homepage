@@ -12,7 +12,7 @@ import HeroImg from "../Assets/Images/heroImage.jpg";
 export default function Hero() {
   const style = {
     titleCon: {
-      marginTop: "191px",
+      marginTop: "96px",
       marginLeft: "207px",
       "@media only screen and (max-width : 400px)": {
         marginLeft: "26.5px",
