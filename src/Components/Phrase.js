@@ -40,7 +40,7 @@ export default function Phrase() {
     },
   };
   return (
-    <Box sx={style.mainCon}>
+    <Box sx={style.mainCon} id = "Clients">
       <Box>
         <Typography sx={style.phrase}>
           “Fast and outstanding resutls. Edie understands their customer’s

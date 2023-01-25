@@ -9,7 +9,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Link } from "@mui/material";
-import Works from "./Works";
 
 const drawerWidth = 240;
 
@@ -64,8 +63,6 @@ export default function DrawerAppBar(props) {
               display: { sm: "flex" },
               color: "black",
               ml: "54px",
-              mt: "21px",
-              mb: "21px",
               fontSize: "36px",
               fontFamily: "Heebo",
               fontWeight: "800",
@@ -92,17 +89,16 @@ export default function DrawerAppBar(props) {
             sx={{
               display: { xs: "none", sm: "flex" },
               mr: "54px",
-              mt: "21px",
-              mb: "21px",
+              
             }}
           >
             <Box>
               <Link href="#" sx={style.linkmenu}>
                 Home
               </Link>
-              <Link sx={style.linkmenu} >Services</Link>
-              <Link sx={style.linkmenu} href = "#test">Our works</Link>
-              <Link sx={style.linkmenu}>Clients</Link>
+              <Link sx={style.linkmenu} href = "#Services" >Services</Link>
+              <Link sx={style.linkmenu} href = "#Work">Our works</Link>
+              <Link sx={style.linkmenu} href = "#Clients">Clients</Link>
               <Link sx={style.linkmenu}>Contact</Link>
             </Box>
           </Box>

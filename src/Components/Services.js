@@ -86,7 +86,7 @@ export default function Services() {
     },
   };
   return (
-    <Box sx={style.mainCon}>
+    <Box sx={style.mainCon} id = 'Services'>
       <Box>
         <Typography sx={style.servTitle}>
           We offer high demand services
