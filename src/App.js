@@ -4,6 +4,7 @@ import Hero from "./Components/Hero";
 import { Box } from "@mui/system";
 import Services from "./Components/Services";
 import Works from "./Components/Works";
+import Team from "./Components/Team";
 
 function App() {
   const style = {
@@ -37,6 +38,7 @@ function App() {
       <Hero></Hero>
       <Services></Services>
       <Works></Works>
+      <Team></Team>
     </Box>
   );
 }
