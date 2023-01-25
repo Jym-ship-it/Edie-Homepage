@@ -87,6 +87,7 @@ export default function Works() {
       justifyContent: "right",
       "@media only screen and (max-width : 400px)": {
         justifyContent: "left",
+        marginTop : "35.64px"
       },
     },
   };
