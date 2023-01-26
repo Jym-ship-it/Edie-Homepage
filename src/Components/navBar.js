@@ -50,8 +50,9 @@ export default function DrawerAppBar(props) {
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
+      position="absolute"
         component="nav"
-        style={{ backgroundColor: "white" }}
+        style={{ backgroundColor : "white"}}
         elevation={0}
       >
         <Toolbar>
@@ -99,7 +100,7 @@ export default function DrawerAppBar(props) {
               <Link sx={style.linkmenu} href = "#Services" >Services</Link>
               <Link sx={style.linkmenu} href = "#Work">Our works</Link>
               <Link sx={style.linkmenu} href = "#Clients">Clients</Link>
-              <Link sx={style.linkmenu}>Contact</Link>
+              <Link sx={style.linkmenu} href = "#Contact">Contact</Link>
             </Box>
           </Box>
         </Toolbar>
