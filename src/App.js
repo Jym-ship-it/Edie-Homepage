@@ -12,7 +12,7 @@ function App() {
     mainCon: {
       margin: "96px 70px",
       "@media only screen and (max-width : 400px)": {
-        margin: "48px 25.5px",
+        margin: "48px 23.5px",
       },
     },
     
