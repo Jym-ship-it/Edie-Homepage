@@ -11,58 +11,76 @@ export default function Team() {
       display: "flex",
       margin: "0px 95px",
       marginTop: "219.47px",
+      "@media only screen and (max-width : 400px)": {
+        margin: "100px 3px",
+        flexDirection: "column",
+      },
     },
     imgCon: {
-      display : "flex",
-      
+      display: "flex",
     },
     images: {
       width: "291.43px",
       height: "300px",
       borderRadius: "24px",
-      marginBottom : "20px"
+      marginBottom: "20px",
+      "@media only screen and (max-width : 400px)": {
+        width: "162.25px",
+        height: "167.03px",
+        marginTop : "36px",
+        marginBottom: "-25px",
+      },
     },
-    firstimage : {
-        marginTop : "85.47px",
-        marginRight : "20px"
+    firstimage: {
+      marginTop: "85.47px",
+      marginRight: "20px",
+
     },
-    TextCon : {
-        marginRight : "270px",
-        marginTop : "85.47px"
+    TextCon: {
+      marginRight: "270px",
+      marginTop: "85.47px",
+      "@media only screen and (max-width : 400px)": {
+        marginRight: "0px",
+      },
     },
-    title:{
-        fontFamily : "Poppins",
-        fontSize : '18px',
-        fontWeight : '500',
-        color : '#EB5757'
+    title: {
+      fontFamily: "Poppins",
+      fontSize: "18px",
+      fontWeight: "500",
+      color: "#EB5757",
     },
-    subtitle : {
-        fontFamily : "Poppins",
-        fontSize : '36px',
-        fontWeight : '500',
-        width : '285px',
-        marginTop : '7px'
+    subtitle: {
+      fontFamily: "Poppins",
+      fontSize: "36px",
+      fontWeight: "500",
+      width: "285px",
+      marginTop: "7px",
+      "@media only screen and (max-width : 400px)": {
+        width: "280px",
+      },
     },
-    info : {
-        fontFamily : "Poppins",
-        fontSize : '16px',
-        fontWeight : '400',
-        width : '273px',
-        marginTop : '14px',
-        color : "#4F4F4F"
-    }
+    info: {
+      fontFamily: "Poppins",
+      fontSize: "16px",
+      fontWeight: "400",
+      width: "273px",
+      marginTop: "14px",
+      color: "#4F4F4F",
+    },
   };
   return (
     <Box sx={style.mainCon}>
-      <Box sx = {style.TextCon}> 
-        <Typography sx = {style.title}>Meet our team</Typography>
-        <Typography sx = {style.subtitle}>We are chilled and a laidback team</Typography>
-        <Typography sx = {style.info}>
+      <Box sx={style.TextCon}>
+        <Typography sx={style.title}>Meet our team</Typography>
+        <Typography sx={style.subtitle}>
+          We are chilled and a laidback team
+        </Typography>
+        <Typography sx={style.info}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </Typography>
       </Box>
       <Box sx={style.imgCon}>
-        <Box sx = {style.firstimage}>
+        <Box sx={style.firstimage}>
           <Box component="img" src={PersonThree} sx={style.images}></Box>
         </Box>
         <Box>

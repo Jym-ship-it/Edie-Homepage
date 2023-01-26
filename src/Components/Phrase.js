@@ -8,22 +8,33 @@ export default function Phrase() {
     mainCon: {
       margin: "0px 95px",
       marginTop: "196px",
+      "@media only screen and (max-width : 400px)": {
+        margin: "100px 3px",
+      },
     },
     phrase: {
       fontFamily: "Poppins",
       fontSize: "36px",
       fontWeight: "500",
       width: "937px",
+      "@media only screen and (max-width : 400px)": {
+        fontSize: "24px",
+        width : "351px"
+      },
+      
     },
     Person: {
       marginTop: "36px",
       display: "flex",
+      "@media only screen and (max-width : 400px)": {
+        marginTop : "18px"
+      },
     },
     personImg: {
       width: "75px",
       height: "75px",
       borderRadius: "12px",
-      marginRight: "51px",
+      marginRight: "28px",
     },
     PersonName: {
       fontFamily: "Poppins",
