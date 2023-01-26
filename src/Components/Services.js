@@ -11,7 +11,7 @@ export default function Services() {
       margin: "0px 95px",
       marginTop : "200px",
       "@media only screen and (max-width : 400px)" : {
-        margin : "102px 5px"
+        margin : "102px 0px"
       }
     },
     servTitle: {
