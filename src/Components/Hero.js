@@ -49,7 +49,7 @@ export default function Hero() {
       backgroundSize: "cover",
       "@media only screen and (max-width : 400px)": {
         marginTop: "15px",
-        width: "348px",
+        width: "372px",
         height: "145px",
       },
     },
