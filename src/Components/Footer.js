@@ -112,16 +112,16 @@ export default function Footer() {
           <Link sx={style.links} href="#">
             Home
           </Link>
-          <Link sx={style.links} href="#">
+          <Link sx={style.links} href="#Services">
             Services
           </Link>
-          <Link sx={style.links} href="#">
+          <Link sx={style.links} href="#Work">
             Our Works
           </Link>
-          <Link sx={style.links} href="#">
+          <Link sx={style.links} href="#Clients">
             Clients
           </Link>
-          <Link sx={style.links} href="#">
+          <Link sx={style.links} href="#Contact">
             Contact
           </Link>
         </Box>

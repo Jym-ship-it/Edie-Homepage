@@ -15,22 +15,6 @@ const drawerWidth = 240;
 export default function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
-
-  const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography>Edie</Typography>
-      <Divider />
-      <Link href="#">hello</Link>
-    </Box>
-  );
-
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
-
   const style = {
     linkmenu: {
       color: "black",
@@ -41,18 +25,56 @@ export default function DrawerAppBar(props) {
       marginLeft: "20px",
       textDecoration: "none",
       "&:hover": {
-        cursor: "pointer",
+        color: "#2D9CDB",
       },
     },
+    linkmenuMobile : {
+      display : "flex",
+      justifyContent : "center",
+      marginTop : "25px",
+      textDecoration : "none",
+      fontFamily : "Poppins",
+      fontWeight : "500",
+      color : "#000000"
+    }
   };
+
+  const handleDrawerToggle = () => {
+    setMobileOpen((prevState) => !prevState);
+  };
+
+  const drawer = (
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+      <Link href="#" sx={style.linkmenuMobile}>
+        Home
+      </Link>
+      <Link sx={style.linkmenuMobile} href="#Services">
+        Services
+      </Link>
+      <Link sx={style.linkmenuMobile} href="#Work">
+        Our works
+      </Link>
+      <Link sx={style.linkmenuMobile} href="#Clients">
+        Clients
+      </Link>
+      <Link sx={style.linkmenuMobile} href="#Contact">
+        Contact
+      </Link>
+    </Box>
+  );
+
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
+
+ 
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
       <AppBar
-      position="absolute"
+        position="absolute"
         component="nav"
-        style={{ backgroundColor : "white"}}
+        style={{ backgroundColor: "white" }}
         elevation={0}
       >
         <Toolbar>
@@ -90,17 +112,24 @@ export default function DrawerAppBar(props) {
             sx={{
               display: { xs: "none", sm: "flex" },
               mr: "54px",
-              
             }}
           >
             <Box>
               <Link href="#" sx={style.linkmenu}>
                 Home
               </Link>
-              <Link sx={style.linkmenu} href = "#Services" >Services</Link>
-              <Link sx={style.linkmenu} href = "#Work">Our works</Link>
-              <Link sx={style.linkmenu} href = "#Clients">Clients</Link>
-              <Link sx={style.linkmenu} href = "#Contact">Contact</Link>
+              <Link sx={style.linkmenu} href="#Services">
+                Services
+              </Link>
+              <Link sx={style.linkmenu} href="#Work">
+                Our works
+              </Link>
+              <Link sx={style.linkmenu} href="#Clients">
+                Clients
+              </Link>
+              <Link sx={style.linkmenu} href="#Contact">
+                Contact
+              </Link>
             </Box>
           </Box>
         </Toolbar>
