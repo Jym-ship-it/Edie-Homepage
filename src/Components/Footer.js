@@ -94,15 +94,16 @@ export default function Footer() {
           fontSize: "14px",
         },
       },
-      user : {
-        textAlign : 'center',
+      users : {
+        display : "flex",
+        justifyContent : "center",
         color : '#FFFFFF',
         fontSize : "14px",
         fontFamily : "Poppins",
         fontWeight : "500",
         "@media only screen and (max-width : 400px)": {
-            marginTop : '154px'
-        }
+          marginTop : '154px'
+      }
       }
   };
   return (
@@ -169,7 +170,7 @@ export default function Footer() {
         </Box>
       </Box>
       <Box sx = {style.user}>
-        <Typography>created by username - devChallenges.io</Typography>
+        <Typography sx = {style.users}>created by <Link href = "https://github.com/Jym-ship-it">Jym-ship-it</Link> - devChallenges.io</Typography>
       </Box>
     </Box>
   );
